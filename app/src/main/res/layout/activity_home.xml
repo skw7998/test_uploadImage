@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 上层老年人端按钮 -->
+    <FrameLayout
+        android:id="@+id/oldPersonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_alignParentStart="true"
+        android:background="#D3D3D3">
+
+        <ImageView
+            android:id="@+id/oldPersonImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="start"
+            android:src="@drawable/old"
+            android:scaleType="centerCrop"
+            android:alpha="0.4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="100dp"
+            android:text="老年人端"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <!-- 下层监控端按钮 -->
+    <FrameLayout
+        android:id="@+id/monitorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/oldPersonButton"
+        android:layout_alignParentEnd="true"
+        android:background="#0262AC">
+
+        <ImageView
+            android:id="@+id/monitorImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:src="@drawable/monitor"
+            android:scaleType="centerCrop"
+            android:alpha="0.4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="100dp"
+            android:text="监控端"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+</RelativeLayout>
